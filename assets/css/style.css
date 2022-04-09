@@ -1,0 +1,693 @@
+*{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("../images/Vector.png");
+  background-size: 100% 100%;
+}
+header nav {
+  border-bottom: 1px solid white;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999999999999;
+  background-color: rgba(0, 0, 0, .8);
+}
+.icon-bar {
+  color: white;
+  font-size: 25px;
+}
+
+header nav ul li a.nav-link {
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  padding: 10px 15px;
+}
+header nav ul li a.nav-link:hover {
+  color: #23d4ce;
+}
+header nav .collapse form span {
+  color: white;
+}
+.btn1 {
+  background-color: white;
+  color: #23d4ce;
+}
+.btn2 {
+  color: white;
+  background-color: #23d4ce;
+}
+.header-content {
+  padding-top: 50px;
+}
+.header-content .container .right {
+  display: flex;
+  justify-content: right;
+}
+.header-content .container .right img {
+  width: 50%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.header-content .container .left {
+  margin-top: 100px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .header-content .container .right {
+    justify-content: center;
+  }
+  .header-content .container .left {
+    margin-top: 20px;
+  }
+  header nav ul {
+    text-align: center;
+  }
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+  nav form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li a.nav-link:hover {
+    border-bottom: 1px solid #23d4ce;
+  }
+}
+.header-content .container .left h1 {
+  font-size: 39px;
+  font-weight: bold;
+}
+.header-content .container .left h1 span {
+  color: #23d4ce;
+}
+
+/******************** end of header ***********************/
+
+/******************** start of images ************************/
+
+.images {
+  margin: 100px 0px;
+}
+
+.images .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.images .box img {
+  filter: brightness(0.8);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.images .box img:hover {
+  filter: brightness(1);
+}
+/******************** end of images ************************/
+
+/******************** start of features ************************/
+
+.features {
+  margin: 100px 0px;
+}
+.features h1 {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.features h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.features:hover h1:before {
+  width: 100%;
+}
+
+.features .container .box {
+  padding: 30px 10px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid gray;
+  margin-top: 50px;
+}
+
+.features .container .box .img {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features .container .box .text h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.features .container .box .text p {
+  word-break: keep-all;
+  text-align: center;
+}
+.features .container .box:hover {
+  background-color: rgba(80, 217, 215, 0.2);
+}
+
+/******************** end of features ************************/
+/******************** start of services ************************/
+.services {
+  margin: 100px 0px;
+}
+.services h1 {
+  position: relative;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.services h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.services:hover h1:before {
+  width: 100%;
+}
+.services .heads {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .services .heads {
+    width: 90%;
+  }
+}
+.services .container .box {
+  margin-top: 150px;
+}
+.services .container .box .box1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.services .container .box .box1 .text {
+  text-align: end;
+  margin-right: 15px;
+}
+.services .container .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .box2 img {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.services .container .box3 {
+  margin-top: 150px;
+}
+.services .container .box3 .box1 {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .services .container .box3 {
+    margin-top: 50px;
+  }
+  .services .container .box {
+    margin-top: 50px;
+  }
+}
+
+/********************** end of services **************************/
+/********************** start of aboutServices ********************/
+
+.about {
+  margin: 100px 0px;
+  background-color: rgba(80, 217, 215, 0.1);
+  padding: 20px 0px;
+}
+.about h1 {
+  position: relative;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.about h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.about:hover h1:before {
+  width: 100%;
+}
+.about .heads {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .about .heads {
+    width: 90%;
+  }
+}
+
+.about .container .left {
+  color: gray;
+  margin-top: 50px;
+}
+.about .container .left h2 {
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.about .container .left button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+}
+.about .container .right {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.about .container .right > img {
+  width: 100%;
+}
+.about .container .right .youtube-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .container .right .youtube-img .youtube {
+  opacity: 0;
+}
+.about .container .right:hover .youtube-img .youtube {
+  opacity: 1;
+}
+
+/********************** end of aboutServices ********************/
+/********************** start of statistics ********************/
+.statistics {
+  margin: 100px 0px;
+}
+.statistics .container .left-text {
+  margin: 50px 0px;
+}
+
+.statistics .container .left-text .head {
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+.statistics .container .left-text .body .box {
+  text-align: center;
+}
+.statistics .container .left-text .body .box p {
+  margin: 0;
+  padding: 0;
+}
+.statistics .container .left-text .body .box p:first-of-type {
+  font-size: 25px;
+  color: #23d4ce;
+}
+
+.statistics .container .left-text .body .box p {
+  font-family: "Poor Richard";
+}
+.statistics .container .left-text .body .box p:last-of-type {
+  font-family: "Metropolis";
+  font-size: 25px;
+}
+
+.statistics .container .right-img img {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+/********************** end of statistics ********************/
+/********************** start of pricing ********************/
+
+.Pricing {
+  margin: 100px 0px;
+  background-color: #f4f4f4;
+  padding: 30px 0px;
+}
+.Pricing h1 {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.Pricing h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.Pricing:hover h1:before {
+  width: 100%;
+}
+
+.Pricing .box {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.Pricing .box h2 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgba(234, 117, 93, 1);
+}
+.Pricing .box p {
+  color: gray;
+  margin-top: 20px;
+}
+.Pricing .box button {
+  padding: 10px 40px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.Pricing .box .img {
+  width: 100%;
+  background: rgba(35, 212, 206, 0.1);
+  padding-bottom: 20px;
+}
+.Pricing .box .img p {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Metropolis";
+}
+.Pricing .box .img p span {
+  color: gray;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.Pricing .box5 h2 {
+  background-color: #23d4ce;
+}
+.Pricing .box5 .img p {
+  color: #23d4ce;
+}
+
+.Pricing .box5 button {
+  background-color: #23d4ce;
+  color: white;
+}
+/********************** end of pricing ********************/
+/********************** start of contact ********************/
+.contact {
+  margin: 100px 0px;
+  padding: 30px 0px;
+}
+.contact h1 {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.contact h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.contact:hover h1:before {
+  width: 100%;
+}
+.contact .container form{
+  transform: scale(.8);
+}
+
+.contact .container .form-groub {
+  margin-top: 20px;
+}
+.contact .container .form-groub .form-control {
+  border-radius: 10px;
+}
+.contact .container .form-groub textarea {
+  resize: none;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.contact .container form .btnSend {
+  text-align: right;
+}
+.contact .container form .btnSend button {
+  background-color: #23d4ce;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .contact .container form .btnSend {
+    text-align: center;
+  }
+  .contact .container form .btnSend button {
+    padding: 10px 30px;
+  }
+}
+
+.contact .container .right {
+  border-left: 1px solid gray;
+  padding-left: 50px;
+  margin: 30px 0px;
+}
+.contact .container .right .box {
+  margin-bottom: 50px;
+}
+.contact .container .right .box p:first-of-type {
+  color: gray;
+}
+
+.contact .container .right .box p:last-of-type span {
+  color: #23d4ce;
+  margin-right: 10px;
+}
+
+/********************** end of contact ********************/
+
+/********************** start of bussiness ********************/
+
+.bussiness {
+  width: 100%;
+  margin: 50px 0px;
+  background-image: url("../images/background.png");
+  background-size: 100% 100%;
+  color: white;
+  background-attachment: fixed;
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bussiness .box button {
+  padding: 10px 30px;
+  background-color: #23d4ce;
+  color: white;
+}
+
+/********************** end of bussiness ********************/
+/********************** start of Testimonials ********************/
+.Testimonials {
+  margin: 100px 0px;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 0px;
+}
+.Testimonials h1 {
+  position: relative;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.Testimonials h1::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  background-color: #23d4ce;
+  transition: 0.5s ease-in-out;
+}
+.Testimonials:hover h1:before {
+  width: 100%;
+}
+
+.Testimonials .content {
+  background-image: url("../images/cantres.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+}
+.Testimonials .box {
+  position: absolute;
+
+  display: inline-block;
+}
+
+.Testimonials .box .img {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Testimonials .box .img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  border: 4 px solid white;
+}
+.Testimonials .box .text {
+  background-color: white;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
+  margin-top: 20px;
+  position: relative;
+  width: 200px;
+}
+.Testimonials .box .text::before {
+  position: absolute;
+  content: "";
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid white;
+  z-index: 99999999;
+  top: -40px;
+  left: 40%;
+}
+
+.Testimonials .box .box-content {
+  text-align: center;
+}
+.Testimonials .box:nth-of-type(1) {
+  top: 0;
+  right: 0;
+}
+.Testimonials .box:nth-of-type(2) {
+  top: 100px;
+  left: 200px;
+}
+.Testimonials .box:nth-of-type(3) {
+  top: 100px;
+  right: 0;
+}
+.Testimonials .box:nth-of-type(3) {
+  top: 100px;
+  right: 200px;
+}
+
+.none {
+  background-color: red;
+}
+
+footer {
+  background-image: url("../images/footer.png");
+  background-size: 100% 100%;
+  width: 100%;
+  margin-top: 150px;
+  padding-top: 70px ;
+  position: relative;
+  overflow: hidden !important;
+}
+footer >.container{
+  border-bottom: 1px solid white;
+}
+
+footer .container .links .logo {
+  text-align: center;
+}
+
+footer .container .links .list{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+ 
+}
+footer .container .links .list ul{
+  list-style: none;
+  display: flex;
+}
+
+footer .container .links .list ul li a{
+  color: white;
+  transition: .3s ease-in-out;
+}
+footer .container .links .list ul li a:hover{
+  color: #23d4ce;
+}
+
+footer .bottom-links .container{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+footer .bottom-links .container .right img{
+margin-left: 10px;
+width: 30px;
+cursor: pointer;
+}
+
+footer .whatsapp-icon{
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+.row >div{
+  padding: 4px;
+}
+section{
+  overflow: hidden !important;
+}
+/********************** end of Testimonials ********************/
