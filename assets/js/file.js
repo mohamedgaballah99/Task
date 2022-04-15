@@ -1,7 +1,8 @@
 $(document).ready(function () {
    $('.Testimonials .container .box .img img').click(function(){
 
-    $(this).parent().parent().find('.text').toggle();('none');
+    $(this).parent().parent().find('.text').toggle('none');
+    $(this).parent().parent().parent().siblings().find('.text').css({"display": "none"})
 
    });
 
